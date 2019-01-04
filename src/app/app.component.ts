@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Angular';
+  
+  scrollToElement($element){
+    var elmnt = document.getElementById($element);
+    elmnt.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+  }
 }
