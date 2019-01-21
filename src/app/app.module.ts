@@ -9,12 +9,14 @@ import { AppComponent } from './app.component';
 import { FrontPageComponent } from './front-page/front-page.component';
 import { ResumeComponent } from './resume/resume.component';
 import { ParticlesModule } from 'angular-particle';
+import { ResumeHeaderComponent } from './resume/resume-header/resume-header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FrontPageComponent,
-    ResumeComponent
+    ResumeComponent,
+    ResumeHeaderComponent
   ],
   imports: [
     BrowserModule,
