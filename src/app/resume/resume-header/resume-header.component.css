@@ -1,0 +1,14 @@
+.header-resume {
+    background-color: #3c5769;
+    font-family: palatino linotype;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    height: 74px;
+    font-style: italic;
+    color:white;
+}
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+ }
