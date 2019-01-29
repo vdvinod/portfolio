@@ -10,13 +10,25 @@ import { FrontPageComponent } from './front-page/front-page.component';
 import { ResumeComponent } from './resume/resume.component';
 import { ParticlesModule } from 'angular-particle';
 import { ResumeHeaderComponent } from './resume/resume-header/resume-header.component';
+import { ProfessionalSummaryComponent } from './resume/professional-summary/professional-summary.component';
+import { WorkHistoryComponent } from './resume/work-history/work-history.component';
+import { HobbiesComponent } from './resume/hobbies/hobbies.component';
+import { PersonalDetailsComponent } from './resume/personal-details/personal-details.component';
+import { SkillsComponent } from './resume/skills/skills.component';
+import { EducationComponent } from './resume/education/education.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FrontPageComponent,
     ResumeComponent,
-    ResumeHeaderComponent
+    ResumeHeaderComponent,
+    ProfessionalSummaryComponent,
+    WorkHistoryComponent,
+    HobbiesComponent,
+    PersonalDetailsComponent,
+    SkillsComponent,
+    EducationComponent
   ],
   imports: [
     BrowserModule,

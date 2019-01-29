@@ -9,10 +9,12 @@ import { Output, EventEmitter, Input } from '@angular/core';
 export class FrontPageComponent implements OnInit {
   @Input() scrollId: string;
   @Output() scroll = new EventEmitter<string>();
+  @Output() sMusic = new EventEmitter<string>();
   myStyle: object = {};
   myParams: object = {};
   width = 100;
   height = 100 ;
+  showPlayButton = true;
   constructor() { }
 
   ngOnInit() {
@@ -24,13 +26,12 @@ export class FrontPageComponent implements OnInit {
       'top': 0,
       'left': 0,
       'right': 0,
-      'bottom': 0,
+      'bottom': 0
   };
-
   this.myParams = {
     particles: {
           number: {
-              value: 200,
+              value: 80,
           },
           color: {
               value: '#000000'
@@ -38,10 +39,21 @@ export class FrontPageComponent implements OnInit {
           shape: {
               type: 'triangle',
           },
+          size : {
+            value: 2
+          },
+          move : {
+            enable : true,
+            speed : 1
+          }
     }
   };
   }
-
+  stopMusic (event) {
+    event.stopPropagation();
+    this.showPlayButton = false;
+    this.sMusic.next();
+  }
   scrollToElement(): void {
     this.scroll.next(this.scrollId);
   }
